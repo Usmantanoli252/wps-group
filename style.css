@@ -1,0 +1,590 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  'Times New Roman', Times, serif;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+}
+
+.logo h4, .logo h2{
+    color: rgb(71, 66, 66);
+}
+.nav-bar{
+    position: absolute;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border: 0.2px solid rgb(185, 181, 181);
+    padding: 0 30px;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-bar img{
+    width: 90px;
+    height: 90px;
+    
+}
+.nav-opt{
+    display: flex;
+    gap: 30px;
+}
+
+
+.nav-opt a{
+    text-decoration: none;
+    color: black;
+}
+.nav-opt a:hover{
+    color:rgb(0, 0, 0);
+    
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    gap: 25px;
+     background-color: rgb(236, 239, 241);
+    
+}
+
+.welcome{
+    font-size: 25px;
+    font-family: cursive;
+    font-weight: 1000;
+    width: fit-content;
+}
+
+
+.hero-img img{
+    width: 100%;
+    height: 100dvh;
+    object-fit: cover;
+    
+}
+.about h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(7, 7, 110);
+}
+.about h2,p{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about-school{
+    font-family: monospace;
+    font-weight: 900;
+    font-size: x-large;
+    color: gray;
+    opacity: 0.8;
+}
+.read-more{
+    border-radius: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    text-decoration: none;
+    color: rgb(247, 242, 242);
+    font-size: larger;
+    border: 0.5px solid rgb(167, 162, 162);
+    background-color: rgb(206, 206, 1);
+}
+
+.features{
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 1px;
+    
+    position: relative;
+    color: black;
+    
+}
+
+
+.features::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("assests/1776506267079.jpg") center/cover no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.feature-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+ 
+.feature-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+
+}
+.features h3{
+    line-height: 4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(44, 43, 43);
+}
+.features p{
+    line-height: 1.7;
+    color: rgb(22, 21, 21);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.features i{
+    padding-right: 90px;
+    font-size: 50px;
+    color: aqua;
+}
+.heading h1{
+    display: flex;
+    justify-content: center;
+}
+.enroll{
+    background-color: rgb(197, 26, 26); ;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    background-image: url(assests/icon-1.png) ;
+    
+    background-repeat: no-repeat;
+    
+}
+
+.get-enroll{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    gap: 0px;
+}
+
+.get-enroll h1{
+    font-family: cursive;
+    color: aliceblue;
+    font-size: 30px;
+
+}
+
+.get-enroll h2{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(45, 0, 245);
+
+}
+.detail{
+    display: flex;
+    color: rgb(10, 10, 10);
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.detail a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: yellow;
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+    border: 0.2px solid black;
+    font-size: 20px;
+    border-radius: 50px 0px;
+    width: 250px; 
+    height: 50px;
+    
+}
+.enroll {
+    position: relative;
+    padding: 40px;
+    color: black;
+    height: 100%;
+}
+
+.enroll::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url("assests/icon-4.png"), url("assests/icon-4.png"),url("assests/icon-1.png");
+    background-repeat: no-repeat;
+    background-position: top left, center, bottom right;
+    background-size: 120px, 150px, 260px;
+
+    opacity: 0.1; /* only affects images */
+    z-index: 0;
+}
+
+.enroll * {
+    position: relative;
+    z-index: 1; /* keeps text above */
+}
+.enroll-detail{
+    padding-bottom: 50px;
+}
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 800px;
+    position: relative;
+    flex-wrap: wrap;
+    
+}
+
+
+
+.gallery-btn a{
+    padding-left: 50px;
+    text-decoration: none;
+    color:rgb(12, 11, 14);
+    font-size: xxx-large;
+    font-family: cursive;
+    
+}
+.gallery-img img{
+height: 700px;
+border: 4px solid rgb(68, 66, 66);
+}
+.gallery::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url(assests/icon-1.png), url("assests/icon-4.png"),url("assests/icon-1.png");
+    background-repeat: no-repeat;
+    background-position: top left, center, bottom right;
+    background-size: 620px, 150px, 260px;
+
+    opacity: 0.3; /* only affects images */
+    z-index: 0;
+}
+.gallery * {
+    position: relative;
+    z-index: 1; /* keeps text above */
+}
+.admission{
+    background-color: rgb(197, 26, 26);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.admission h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: xxx-large;
+}
+.admission p{
+    font-size: larger;
+    color: rgb(0, 0, 0);
+}
+.admission button{
+    
+    color: white;
+    background-color: rgb(5, 5, 92);
+    font-family: monospace;
+    font-size: x-large;
+    height: 60px;
+    width: 250px;
+}
+.main-footer{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    position: relative;
+   
+}
+.footer-logo img {
+    width: 150px;
+}
+footer p{
+    color: gray;
+}
+
+    .heroimg {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.heroimg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* visible image */
+.heroimg img.active {
+    opacity: 1;
+}
+.main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: linear-gradient(135deg,black,skyblue)
+}
+.gallery-header{
+    background-color: rgb(36, 36, 117);
+    color: white;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+    max-width: 50%;
+    height: 200px;
+    max-height: 300px;
+    
+    
+}
+.gallery-header h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.gallerry{
+    column-count: 4;
+    column-gap: 12px;
+    width: 99%;
+    max-width: 1900px;
+   
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem;
+
+}
+.gallery-nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.gallery-nav a{
+    display: flex;
+    justify-self: end;
+    position: relative;
+    z-index: 1;
+}
+.gallerry img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    display: block;
+    transition: transform 0.3s,box-shadow 0.3s;
+    cursor: pointer;
+}
+.gallerry img:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px;
+}
+.gallerry::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-image: url(assests/icon-4.png), url("assests/icon-4.png"),url("assests/icon-1.png");
+    background-repeat: no-repeat;
+    background-position: bottom left, center, bottom right;
+    background-size: 120px, 150px, 160px;
+
+    opacity: 0.3; /* only affects images */
+    z-index: 0;
+}
+.gallerry * {
+    position: relative;
+    z-index: 1; /* keeps text above */
+}
+.quote{
+    
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.quote h2{
+    width: 90%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(80, 79, 79);
+}
+.quote p{
+    width: 85%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+}
+.footer-quote{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    line-height: 40px;
+    color: rgb(58, 53, 53);
+    padding-left: 20px;
+}
+.footer-quote h2{
+    font-family: cursive;
+    color: rgb(58, 57, 57);
+    font-size: x-large;
+}
+
+
+@media (max-width:800px) {
+    .gallerry{
+        column-count: 2;
+    }
+    
+}
+@media (max-width:500px) {
+    .gallerry{
+        column-count:2 ;
+    }
+    
+}
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding: 15px;
+        
+    }
+    .footer-quote{
+        font-size: medium;
+    }
+    .gallery-header h1{
+        
+        font-size: larger;
+    }
+    .quote{
+        font-size: 15px;
+        height: auto;
+        padding-top: 20px;
+    }
+    .nav-opt {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        display: none;
+    }
+    .welcome{
+        padding-top: 10px;
+        font-size: 15px;
+    }
+
+    .about-school{
+        font-size: 15px;
+    }
+    .nav-bar img {
+        width: 60px;
+        height: 60px;
+    }
+    .about-detail{
+        width: 80%;
+        height: 270px;
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+    .gallery-btn{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+
+    .gallery-btn a {
+
+        padding-right: 220px;
+        font-size: 30px;
+        
+    }
+    .gallery-img{
+        width: 80%;
+        padding-bottom: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .get-enroll {
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+    }
+    
+    .detail p{
+        display: none;
+    }
+    .detail a{
+        height: 80px;
+    }
+    .admission{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left: 20px;
+    }
+    .admission p{
+        display: none;
+    }
+    .image1{
+        display: none;
+    }
+
+    .detail a {
+        width: 200px;
+        font-size: 16px;
+    }
+    .main-footer p{
+        width: 100%;
+        font-size: 12px;
+    }
+}
